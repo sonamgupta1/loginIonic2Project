@@ -1,0 +1,33 @@
+<ion-navbar *navbar>
+    <a menu-toggle>
+        <icon menu></icon>
+    </a>
+    <ion-title>Login</ion-title>
+</ion-navbar>
+
+
+<ion-content class="login">
+
+    <ion-list>
+        <div class="logo">
+            <img src="img/appicon.png">
+        </div>
+
+        <ion-input floating-label>
+            <ion-label primary>Username</ion-label>
+            <input type="text">
+        </ion-input>
+
+        <ion-input floating-label>
+            <ion-label primary>Password</ion-label>
+            <input type="password">
+        </ion-input>
+
+
+        <ion-row>
+                <button (click)="login()" primary block>Login</button>
+
+        </ion-row>
+    </ion-list>
+
+</ion-content>
